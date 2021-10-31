@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*--header--*/
+header{
+    background-color:black;
+}
+h2{
+    color:red;
+    text-align: center;
+}
+@media screen{
+    max width: 520px;
+    .menu{
+        padding: auto;
+    }
+    
+}
+
+
+/* --main-- */
+main{
+    background-color:183, 183, 164;
+}
+.quienesSomos{ color:black;
+    font-style:italic;
+    font-size: 120%;
+    text-align: center;
+    padding: 50px;
+    
+}
+.menu a:hover{
+    color:white;
+    text-decoration: none;
+    font-style: normal;
+}
+.gridPadre{
+    display: grid;
+    grid-template-areas:
+    "nosotros video";
+
+}
+.quienesSomos{
+    grid-area: nosotros;
+    ;
+}
+.video{
+    grid-area: video;
+}
+
+
+
+
+/*--submenu--*/
+.menu {
+	width: 60%;
+}
+
+.menu li {
+    color: red;
+	display: inline-block;
+	position: relative;
+	width: 10%;
+	text-align: center;
+	font-size: 15pt;
+}
+
+.subMenu {
+	display: none;
+	position: absolute;
+	background-color: white;
+}
+
+.subMenu li {
+	display: block;
+	width: 100%;
+}
+.menu li:hover .subMenu {
+	display: block;
+}
+
+
+h4{color: black;
+font-style: italic;
+}
+
+
+.tituloRojo { color: red;
+            font-style: italic;
+            font-size: 25px;
+            text-align:center;
+}
+ul li { color: rgb(155, 49, 30);
+font-style: initial;
+}
+.horario{
+    margin: 20px;
+    text-align:center;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-position: inside;
+    list-style-image:url("") 
+}
+
+ul{
+    padding: 15px;
+}
+
+
+
+/*--mayorista--*/
+#parrafoNaranja {color: wheat;
+font-style: italic;
+}
+tr th{ color: black;}
+tr td {color: black;}
+.tablaMayorista{
+    margin-top: 30px;
+    margin: right 200px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    width: 300px;
+    border-top: solid 5px olivedrab;
+    border-right: solid 5px olivedrab;
+    border-bottom: solid 5px olivedrab;
+    border-left:solid 5px olivedrab;
+}
+/*--main mayorista--*/
+
+.mainMayorista{
+    background-color: #FFE566;
+}
+.nosotrosMayorista{
+    font-size: 25px;
+    font-family: inherit;
+    font-style: oblique;
+    text-align: center;
+    
+}
+.contactoMayorista{
+    font-size: 20px;
+    font-family: inherit;
+    font-style: oblique;
+    color: rgb(175, 48, 48);
+}
+.opcionDeVenta{
+    font-size: 25px;
+    font-family: inherit;
+    font-style: oblique;
+    color: rgb(175, 48, 48);
+
+}
+
+/*--main--*/
+.fondoAmarillo{
+    background-color:#FFE566;
+}
+.pagos{
+    font-size: 20px;
+}
+.local:hover{
+    transform:scale(2,2);}
+
+.lanzamiento:hover{
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+}
+/*--footer--*/
+footer{
+background-color:#FFE14C;
+}
+.formulario{
+    border-top: solid 5px #f9844a;
+    border-right: solid 5px #f9844a;
+    border-bottom: solid 5px #f9844a;
+    border-left:solid 5px #f9844a;
+}
+
+.wath:hover{
+    
+transform:translateX(50px);
+}
+.ig:hover{
+    transform: translateX(50px);
+}
+.fb:hover{
+    transform: translateX(50px);
+}
+.hombre{
+    display:flex;
+    flex-direction:column;
+}
+.fondoHombre {
+    background-color: yellow;
+}
+/*--mujer--*/
+.mainMujer{
+    background-color:rgb(241, 232, 232);
+}
+.quienesSomos{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-style: oblique;
+
+}
+.lanzamientoMujer{
+    color: orangered;
+    font-size: 30px;
+    text-align-last: center
+    ;
+}
+.videoMujer{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.productos{
+    color: orangered;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+.mujer li{
+    font-size: 18px;
+}
+.navegador{
+    font-size: 20px;
+    color: red;
+    display: grid;
+    grid-template-rows:2fr 2fr;
+    
+}
+.footerMujer{
+    background-color:rgb(241, 232, 232);
+}
+
+/*--index niños--*/
+.mainNinos{
+    background-color:rgb(241, 232, 232);
+}
+.gridNinos{
+    display: grid;
+    grid-template-areas:
+    "productos  nosotros";
+    grid-template-columns: 3fr 2fr;
+   justify-items:start;
+   justify-content: start;
+}
+.nosotrosNinos{
+    grid-area: nosotros;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-style: oblique;
+   
+}
+.productosVenta{
+    grid-area: productos;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.productosNinos{
+    font-size: 28px;
+    text-align: center;
+    font-style: oblique;
+    color: orangered;
+    margin-top: 35px;
+}
+.productosVenta{
+    display:flex;
+    align-items: stretch;
+    text-align: center;
+    font-size: 20px;
+   
+}
+.invitacion{
+    color: orangered;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+}
+.contactoNinos{
+    display: flex;
+
+}
+.footerNinos{
+    background-color:rgb(241, 232, 232);
+}
+.contactoNinos{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*--main hombre--*/
+.mainHombre{
+    background-color:rgb(241, 232, 232);
+}
+h4{
+    text-align: center;
+    font-style: oblique;
+    font-family: initial;
+}
